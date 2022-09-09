@@ -1,10 +1,26 @@
 .App {
   text-align: center;
+  height: 100%;
+  background-image: url(./img/previsioni-meteo-hd.jpg);
+  background-size: auto;
+  background-position: center;
 }
+
+
+.myContainer {   background-color: rgba(255, 255, 255, 0.71);   border-radius: 2em;   box-shadow: 0 0 25px 0 rgba(188, 188, 188, 0.9);}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
+}
+
+h1,h2,h3,h4,h5 {
+  background-color: #e7f1ff;
+}
+
+h1,h3{
+  background-color: rgba(255, 255, 255, 0.71);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,6 +28,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.grey{
+  background-color: white;
+}
+
+ 
 
 .App-header {
   background-color: #282c34;
