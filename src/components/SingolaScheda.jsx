@@ -1,5 +1,8 @@
 import { Col, Row } from "react-bootstrap";
 
+//questo component visualizza a video la singola scheda meteo in una data fascia oraria
+// visualizza inoltre ogni scheda meteo negli accordion item
+
 const SingolaScheda = ({ city }) => {
   return (
     <Row>

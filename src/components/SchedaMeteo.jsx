@@ -3,9 +3,11 @@ import AccordionMenu from "./AccordionMenu";
 import SchedaNext from "./SchedaNext";
 import SingolaScheda from "./SingolaScheda";
 
+// questo component racchiude tutti i component che visualizzano informazioni sul meteo
+
 const SchedaMeteo = ({ city, cityFore }) => {
   return (
-    <Container className="myContainer">
+    <Container className="myClass">
       <Row className="my-5">
         <Col xs={5} className="mx-auto">
           <h3>
@@ -29,14 +31,17 @@ const SchedaMeteo = ({ city, cityFore }) => {
           </Row>
         </Col>
         <Col xs={5} className="mx-auto">
-          {cityFore.list.map((obj, i) => {
-            return i < 3 && <SchedaNext key={i} city={obj} />;
-          })}
+          {
+            //visualiza  solo i primi 3 elementi
+            cityFore.list.map((obj, i) => {
+              return i < 3 && <SchedaNext key={i} city={obj} />;
+            })
+          }
         </Col>
       </Row>
       <Row>
         <Col xs={10} className="mx-auto">
-            <AccordionMenu city={cityFore.list} />
+          <AccordionMenu city={cityFore.list} />
         </Col>
       </Row>
     </Container>

@@ -1,5 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 
+//questo component mostra le previsioni future sulla colonna di destra
+
 const SchedaNext = ({city}) =>{
     return(
         <Row className="mb-1">

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Accordion, Button, Container } from "react-bootstrap";
 import SingolaScheda from "./SingolaScheda";
 
+// visualizza la sezione accordion
+
 const AccordionMenu = ({ city }) => {
   const [show, setShow] = useState(false);
  
