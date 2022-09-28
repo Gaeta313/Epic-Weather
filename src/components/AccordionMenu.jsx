@@ -9,17 +9,17 @@ const AccordionMenu = ({ city }) => {
  
 
   return (
-    <Container>
+    <Container >
         <Button className="my-5" variant="primary" onClick={() => {
             show? setShow(false) : setShow(true);
         }} >
             Mostra/Nascondi Previsioni Future
         </Button>
       {show && (
-        <Accordion>
+        <Accordion >
           {city.map((obj, i) => (
-            <Accordion.Item key={i} eventKey={i}>
-              <Accordion.Header>Date : {obj.dt_txt}</Accordion.Header>
+            <Accordion.Item className="accordion" key={i} eventKey={i}>
+              <Accordion.Header >Date : {obj.dt_txt}</Accordion.Header>
               <Accordion.Body>
                 <SingolaScheda city={obj} />
               </Accordion.Body>

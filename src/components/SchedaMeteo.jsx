@@ -7,9 +7,9 @@ import SingolaScheda from "./SingolaScheda";
 
 const SchedaMeteo = ({ city, cityFore }) => {
   return (
-    <Container className="myClass">
+    <Container className="myClass mb-5">
       <Row className="my-5">
-        <Col xs={5} className="mx-auto">
+        <Col xs={12} sm={5} className="mx-auto">
           <h3>
             {city.name}
             {", "} {city.sys.country}
@@ -22,15 +22,15 @@ const SchedaMeteo = ({ city, cityFore }) => {
         </Col>
       </Row>
       <Row className="my-5">
-        <Col xs={5} className="mx-auto">
+        <Col xs={12} sm={5} className="mx-auto">
           <Row>
-            <Col xs={5} className="mx-auto">
+            <Col xs={12} sm={5} className="mx-auto">
               <h4>Now</h4>
             </Col>
             <SingolaScheda city={city} />
           </Row>
         </Col>
-        <Col xs={5} className="mx-auto">
+        <Col xs={12} sm={5} className="mx-auto">
           {
             //visualiza  solo i primi 3 elementi
             cityFore.list.map((obj, i) => {
