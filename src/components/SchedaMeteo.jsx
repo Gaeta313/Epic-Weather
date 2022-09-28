@@ -24,10 +24,10 @@ const SchedaMeteo = ({ city, cityFore }) => {
       <Row className="my-5">
         <Col xs={12} sm={5} className="mx-auto">
           <Row>
-            <Col xs={12} sm={5} className="mx-auto">
+            <Col xs={12} className="mx-auto">
               <h4>Now</h4>
+              <SingolaScheda city={city} />
             </Col>
-            <SingolaScheda city={city} />
           </Row>
         </Col>
         <Col xs={12} sm={5} className="mx-auto">
