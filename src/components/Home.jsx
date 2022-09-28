@@ -92,7 +92,7 @@ const Home = () => {
 
   return (
     <Container fluid>
-      <h1>Epic Weather</h1>
+      <h1>React Weather</h1>
       <Container>
         <Row>
           <Col xs={10} className="mx-auto my-3">
